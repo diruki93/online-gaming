@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Games - Online Gaming</title>
+  <meta name="description" content="Browse our full list of games with prices and descriptions. Find your next favorite game!" />
+  <meta name="keywords" content="game list, online games, game prices, fantasy games, racing games" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    html, body {
+      background-color: #000;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #c7a3ff;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .game-card {
+      background-color: #2c2c2c;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .game-card img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .game-card h3 {
+      color: #c7a3ff;
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    .game-card p {
+      font-size: 1rem;
+      color: #ddd;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+    }
+
+    #logo {
+      max-height: 60px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 12px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+      background-color: #5c2d91;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html">
+        <img src="images/logo.jpg" id="logo" alt="Online Gaming Logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About</a></li>
+          <li><a href="games.html" class="active">Games</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Our Games</h1>
+    <p class="intro">Explore our exciting collection of online games across a variety of genres. There's something for every gamer!</p>
+
+    <div class="games-grid">
+      <div class="game-card">
+        <img src="images/fantasy_quest.png" alt="Fantasy Quest">
+        <h3>Fantasy Quest</h3>
+        <p>Price: Free</p>
+      </div>
+      <div class="game-card">
+        <img src="images/speed_racer.png" alt="Speed Racer">
+        <h3>Speed Racer</h3>
+        <p>Price: £4.99</p>
+      </div>
+      <div class="game-card">
+        <img src="images/puzzle_master.png" alt="Puzzle Master">
+        <h3>Puzzle Master</h3>
+        <p>Price: Free</p>
+      </div>
+      <div class="game-card">
+        <img src="images/magic_academy.png" alt="Magic Academy">
+        <h3>Magic Academy</h3>
+        <p>Price: £3.49</p>
+      </div>
+      <div class="game-card">
+        <img src="images/mystery_mansion.png" alt="Mystery Mansion">
+        <h3>Mystery Mansion</h3>
+        <p>Price: £1.99</p>
+      </div>
+      <div class="game-card">
+        <img src="images/space_explorer.png" alt="Space Explorer">
+        <h3>Space Explorer</h3>
+        <p>Price: £3.99</p>
+      </div>
+      <div class="game-card">
+        <img src="images/chess_master.png" alt="Chess Master">
+        <h3>Chess Master</h3>
+        <p>Price: Free</p>
+      </div>
+      <div class="game-card">
+        <img src="images/word_wizard.png" alt="Word Wizard">
+        <h3>Word Wizard</h3>
+        <p>Price: Free</p>
+      </div>
+      <div class="game-card">
+        <img src="images/farm_frenzy.png" alt="Farm Frenzy">
+        <h3>Farm Frenzy</h3>
+        <p>Price: £2.49</p>
+      </div>
+      <div class="game-card">
+        <img src="images/battle_arena.png" alt="Battle Arena">
+        <h3>Battle Arena</h3>
+        <p>Price: £4.99</p>
+      </div>
+      <div class="game-card">
+        <img src="images/sudoku_solver.png" alt="Sudoku Solver">
+        <h3>Sudoku Solver</h3>
+        <p>Price: Free</p>
+      </div>
+      <div class="game-card">
+        <img src="images/treasure_hunt.png" alt="Treasure Hunt">
+        <h3>Treasure Hunt</h3>
+        <p>Price: £1.99</p>
+      </div>
+      <div class="game-card">
+        <img src="images/card_clash.png" alt="Card Clash">
+        <h3>Card Clash</h3>
+        <p>Price: £2.99</p>
+      </div>
+      <div class="game-card">
+        <img src="images/city_builder.png" alt="City Builder">
+        <h3>City Builder</h3>
+        <p>Price: £3.99</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Online Gaming. All rights reserved.</p>
+  </footer>
+</body>
+</html>

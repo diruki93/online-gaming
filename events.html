@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events - Online Gaming</title>
+  <meta name="description" content="Stay updated with Online Gaming events, tournaments, promotions, and community challenges.">
+  <meta name="keywords" content="events, promotions, online gaming tournaments, discounts">
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    html, body {
+      background-color: #000;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      animation: fadeIn 1.5s ease-in;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #c7a3ff;
+      margin-bottom: 40px;
+    }
+
+    .event-section {
+      background-color: #2c2c2c;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .event-section h2 {
+      color: #e1cfff;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .event-section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .event-section ul {
+      padding-left: 20px;
+    }
+
+    .event-section ul li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background-color: #3b2d5c;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: auto;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+    }
+
+    #logo {
+      max-height: 60px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 12px;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+      background-color: #5c2d91;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html">
+        <img src="images/logo.jpg" id="logo" alt="Online Gaming Logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="events.html" class="active">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Upcoming Events & Promotions</h1>
+
+    <section class="event-section">
+      <h2>🎮 Gaming Tournaments</h2>
+      <p>Compete in exciting tournaments for top scores and awesome prizes!</p>
+      <ul>
+        <li>Monthly Battle Royale Showdown</li>
+        <li>Speed Racing League - Weekly Finals</li>
+        <li>Puzzle Master Challenge - Win exclusive merch!</li>
+      </ul>
+    </section>
+
+    <section class="event-section">
+      <h2>🚀 New Game Launches</h2>
+      <p>Be the first to experience our newest games with bonus content and early access rewards.</p>
+      <div class="highlight">
+        <strong>Now Available:</strong> <em>Galaxy Duel: Star Clash</em> & <em>Farm Frenzy 2</em>
+      </div>
+    </section>
+
+    <section class="event-section">
+      <h2>🎯 Community Challenges</h2>
+      <p>Join seasonal and themed challenges for a chance to be featured on our leaderboard!</p>
+      <ul>
+        <li>Spring Sprint: Complete 5 games in 7 days</li>
+        <li>Multiplayer Madness: Play with 10 friends</li>
+        <li>Creative Combo: Share your best in-game screenshots</li>
+      </ul>
+    </section>
+
+    <section class="event-section">
+      <h2>🎁 Seasonal Sales & Promotions</h2>
+      <p>Enjoy amazing discounts during our holiday events and special promotions:</p>
+      <ul>
+        <li>50% off all strategy games - April Special</li>
+        <li>Buy 1 Get 1 Free - Easter Weekend</li>
+        <li>Free XP Boost for all players during spring break</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Online Gaming. All rights reserved.</p>
+  </footer>
+</body>
+</html>
